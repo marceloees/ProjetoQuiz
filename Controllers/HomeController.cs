@@ -11,7 +11,8 @@ using ProjetoQuiz.Models;
 
 namespace ProjetoQuiz.Controllers
 {
-    [Authorize]
+    [Controller]
+    [Route("Home")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -21,21 +22,25 @@ namespace ProjetoQuiz.Controllers
             _logger = logger;
         }
 
+        [Route("/")]
         public IActionResult Index()
         {
             return View();
         }
 
+        [Route("Privacy")]
         public IActionResult Privacy()
         {
             return View();
         }
 
+        [Route("Cadastrar/Quiz")]
         public IActionResult Quiz()
         {
             return View();
         }
 
+        [Route("Error")]
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
