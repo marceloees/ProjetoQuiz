@@ -11,30 +11,35 @@ namespace ProjetoQuiz.Models
     public class Quiz
     {
         [Key]
-        public int Id { get; set; }
         [Column("idQuiz")]
+        public int Id { get; set; }
+       
 
+        [Column("User")]
         public string User { get; set; }
-        [Column("tb_User")]
+        
 
+        [Column("titulo")]
         public string Titulo { get; set; }
-        [Column("tb_titulo")]
+        
 
+        [Column("ques1")]
         public string Question1 { get; set; }
-        [Column("tb_ques1")]
+        
+        [Column("ques2")]
         public string Question2 { get; set; }
-        [Column("tb_ques2")]
+       
+        [Column("ques3")]
         public string Question3 { get; set; }
-        [Column("tb_ques3")]
+        
+        [Column("ques4")]
         public string Question4 { get; set; }
-        [Column("tb_ques4")]
+        
 
-        public char RespCerta { get; set; }
-        [Column("tb_respCerta")]
+        [Column("respCerta")]
+        public string RespCerta { get; set; }
+      
 
-        [ForeignKey("idUsuario")]
-        public virtual ApplicationIdentity idUsuario { get; set; }
-        public virtual ICollection<Quiz> Quizzes { get; private set; }
 
 
     }

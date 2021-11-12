@@ -27,16 +27,19 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        // só vai ser exibido se o usuário for admin, caso necessário, tirar essa opção
-                        @if (SignInManager.IsSignedIn(User) && await RoleManager.FindByNameAsync("ADMIN") != null)
+                        <!-- só vai ser exibido se o usuário for admin, caso necessário, tirar essa opção
+                         && await RoleManager.FindByNameAsync("ADMIN") != null -->
+    
+                        @if (SignInManager.IsSignedIn(User))
                         {
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                             </li>
-                        }
+
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Quiz" asp-action="Quiz">Cadastrar Quiz</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Quiz" asp-action="Create">Cadastrar Quiz</a>
                         </li>
+                        }
                     </ul>
                 </div>
             </div>

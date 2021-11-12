@@ -12,6 +12,7 @@ namespace ProjetoQuiz.Models
 {
     [Authorize]
     [Controller]
+    [Route("Quiz")]
     public class QuizController : Controller
     {
         private readonly ProjetoQuizContext _context;
