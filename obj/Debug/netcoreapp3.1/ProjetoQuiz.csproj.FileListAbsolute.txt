@@ -89,7 +89,6 @@ C:\Users\mesilva\source\repos\ProjetoQuiz\obj\Debug\netcoreapp3.1\staticwebasset
 C:\Users\mesilva\source\repos\ProjetoQuiz\obj\Debug\netcoreapp3.1\ProjetoQuiz.dll
 C:\Users\mesilva\source\repos\ProjetoQuiz\obj\Debug\netcoreapp3.1\ProjetoQuiz.pdb
 C:\Users\mesilva\source\repos\ProjetoQuiz\obj\Debug\netcoreapp3.1\ProjetoQuiz.genruntimeconfig.cache
-C:\Users\mesilva\source\repos\ProjetoQuiz\obj\Debug\netcoreapp3.1\Razor\Views\Home\Quiz.cshtml.g.cs
 C:\Users\mesilva\source\repos\ProjetoQuiz\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
 C:\Users\mesilva\source\repos\ProjetoQuiz\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\mesilva\source\repos\ProjetoQuiz\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
@@ -196,3 +195,5 @@ C:\Users\mesilva\source\repos\ProjetoQuiz\obj\Debug\netcoreapp3.1\Razor\Areas\Id
 C:\Users\mesilva\source\repos\ProjetoQuiz\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
 C:\Users\mesilva\source\repos\ProjetoQuiz\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\mesilva\source\repos\ProjetoQuiz\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\mesilva\source\repos\ProjetoQuiz\obj\Debug\netcoreapp3.1\Razor\Views\Questoes1\Index.cshtml.g.cs
+C:\Users\mesilva\source\repos\ProjetoQuiz\obj\Debug\netcoreapp3.1\Razor\Views\Quiz\Questionario.cshtml.g.cs

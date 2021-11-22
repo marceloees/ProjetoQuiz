@@ -23,13 +23,14 @@ namespace ProjetoQuiz.Models
         }
 
         // GET: Quiz
+        [Route("Quiz/Index")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Quiz.ToListAsync());
         }
 
         // GET: Quiz/Details/5
-        [Route("/Detalhes/{id}")]
+        [Route("Quiz/Detalhes/{id}")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -154,6 +155,16 @@ namespace ProjetoQuiz.Models
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+
+        [HttpGet]
+        [Route("Quiz/Questionario")]
+        public async Task<IActionResult> Questionario()
+        {
+            return View(await _context.Quiz.ToListAsync());
+        }
+
+        [HttpPost]
+        [Route("Quiz/Questionario")]
 
         private bool QuizExists(int id)
         {

@@ -1,0 +1,31 @@
+﻿@model IEnumerable<ProjetoQuiz.Models.Quiz>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<h1>Questionário</h1>
+
+<div>
+
+    @foreach (var item in Model)
+    {
+        @using (Html.BeginForm("Quiz", "", FormMethod.Post))
+        {
+            <h3>@Html.DisplayFor(modelItem => item.Titulo)</h3>
+            <input type="radio" name="1" value="1" />
+            <label> @Html.DisplayFor(modelItem => item.Question1) </label><br />
+            <input type="radio" name="2" value="2" />
+            <label>@Html.DisplayFor(modelItem => item.Question2) </label><br />
+            <input type="radio" name="3" value="3" />
+            <label> @Html.DisplayFor(modelItem => item.Question3)</label><br />
+            <input type="radio" name="4" value="4" />
+            <label> @Html.DisplayFor(modelItem => item.Question4)"</label><br />
+
+
+
+        }
+    }
+
+    <input type="submit" value="Enviar Respostas" />
+</div>

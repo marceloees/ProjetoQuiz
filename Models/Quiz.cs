@@ -44,6 +44,7 @@ namespace ProjetoQuiz.Models
 
     }
 
+
     //ter uma variável que escuta e armazena a escolha do usuário e depois comparar com o banco de dados. 
     //criar o cálculo de percentual do jogador
 }

@@ -1,0 +1,15 @@
+﻿
+@model List<ProjetoQuiz.Dados.Questao>
+
+<h1>Questões</h1>
+
+@foreach (var item in Model)
+{
+<p>@item.IdQuestao</p>
+<p>@item.NomeQuestão</p>
+
+foreach (var item2 in item.ListaAlternativas)
+{
+    <p>@item2.NomeAlterenativa</p>
+}
+}
